@@ -1,0 +1,19 @@
+img {
+    opacity: 0.5;
+}
+
+img:hover {
+    opacity: 1.0;
+    transform: scale(1.5);
+    border: 5px solid steelblue;
+}
+
+.grade {
+    padding: 50px;
+    background: linear-gradient(to right, #e74c3c, #000000);
+}
+
+.navlinks:hover {
+    background-color: red;
+    color: black;
+}

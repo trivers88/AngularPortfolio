@@ -1,0 +1,79 @@
+.parallax {
+    background-image: url("/assets/stars.jpg");
+    height: 750px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+img {
+    opacity: 0.5;
+}
+
+img:hover {
+    opacity: 1.0;
+    border: 5px solid steelblue;
+}
+
+.grade {
+    background: linear-gradient(to right, #e74c3c, #000000);
+}
+
+.navlinks:hover {
+    background-color: red;
+    color: black;
+}
+
+.mouse {
+    max-width: 2.5rem;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.scroll {
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+    animation-iteration-count: infinite;
+    transform-origin: 50% 20.5px;
+    will-change: transform, opacity;
+    opacity: 1;
+}
+
+.scroll-link {
+    position: absolute;
+    bottom: 20rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes scroll {
+    0%,
+    20% {
+        transform: translateY(0) scaleY(1);
+    }
+    100% {
+        transform: translateY(36px) scaleY(2);
+        opacity: 0;
+    }
+}
+
+.content {
+    min-height: 100vh;
+    max-width: 28rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.scroll-down {
+    color: white;
+
+    text-align: justify;
+}

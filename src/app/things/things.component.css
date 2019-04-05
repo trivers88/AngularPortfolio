@@ -1,0 +1,22 @@
+img {
+    opacity: 0.5;
+}
+
+img:hover {
+    opacity: 1.0;
+}
+
+.grade {
+    padding: 50px;
+    background: linear-gradient(to right, #e74c3c, #000000);
+    min-height: 80vh;
+}
+
+body {
+    background: linear-gradient(to right, #e74c3c, #000000);
+}
+
+.navlinks:hover {
+    background-color: red;
+    color: black;
+}
