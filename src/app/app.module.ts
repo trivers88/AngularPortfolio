@@ -14,6 +14,7 @@ import { CirclesComponent } from './things/circles/circles.component';
 import { TodoListComponent } from './things/todo-list/todo-list.component';
 import { ColorGuesserComponent } from './things/color-guesser/color-guesser.component';
 
+
 const appRoutes: Routes = [
   {path: '', component: LandingComponent },
   {path: 'home', component: HomeComponent },
@@ -39,7 +40,7 @@ const appRoutes: Routes = [
     LandingComponent,
     CirclesComponent,
     TodoListComponent,
-    ColorGuesserComponent
+    ColorGuesserComponent,
   ],
   imports: [
     BrowserModule,
