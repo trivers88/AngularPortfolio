@@ -3,11 +3,11 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(__dirname + '/dist/<travportfolio2>'));
+app.use(express.static(__dirname + '/dist/travportfolio2'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(__dirname+'/dist/<travportfolio2>/index.html'));
+res.sendFile(path.join(__dirname+'/dist/travportfolio2/index.html'));
 });
 
 
