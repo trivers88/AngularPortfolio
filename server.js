@@ -3,17 +3,10 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(__dirname + '/dist/travportfolio2'));
+app.use(express.static(${__dirname}/travportfolio2/dist/));
 
-app.get('/*', function(req,res) {
-    
-res.sendFile(path.join(__dirname+'/dist/travportfolio2/index.html'));
-});
-
-
-app.get('/*', function(req,res) {
-res.sendFile(path.join(__dirname+'/dist/index.html'));
-});
+app.get('*', (req, res) => {
+    res.sendFile(`./travportfolio2/dist/index.html`);
 
 
 app.listen(process.env.PORT || 8080)
