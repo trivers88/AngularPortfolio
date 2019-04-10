@@ -44,7 +44,7 @@ img:hover {
 
 .scroll-link {
     position: absolute;
-    bottom: 20rem;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
 }
