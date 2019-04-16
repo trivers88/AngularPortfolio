@@ -8,25 +8,22 @@ import { HomeComponent } from './home/home.component';
 import { DogsComponent } from './dogs/dogs.component';
 import { AppsComponent } from './apps/apps.component';
 import { AboutMeComponent } from './about-me/about-me.component';
-import { ThingsComponent } from './things/things.component';
 import { LandingComponent } from './landing/landing.component';
-import { CirclesComponent } from './things/circles/circles.component';
-import { TodoListComponent } from './things/todo-list/todo-list.component';
-import { ColorGuesserComponent } from './things/color-guesser/color-guesser.component';
+import { CirclesComponent } from './apps/circles/circles.component';
+import { TodoListComponent } from './apps/todo-list/todo-list.component';
+import { ColorGuesserComponent } from './apps/color-guesser/color-guesser.component';
 
 
 const appRoutes: Routes = [
   {path: '', component: LandingComponent },
   {path: 'home', component: HomeComponent },
   {path: 'dogs', component: DogsComponent },
-  {path: 'apps', component: AppsComponent },
-  {path: 'aboutme', component: AboutMeComponent },
-  {path: 'things', component: ThingsComponent, children: [
-    {path: 'circles', component: CirclesComponent },
-    {path: 'todo', component: TodoListComponent },
-    {path: 'colorguesser', component: ColorGuesserComponent }
-    ] }
-  ];
+  {path: 'apps', component: AppsComponent},
+  {path: 'circles', component: CirclesComponent },
+  {path: 'todo', component: TodoListComponent },
+  {path: 'colorguesser', component: ColorGuesserComponent },
+  {path: 'aboutme', component: AboutMeComponent }]
+  
 
 @NgModule({
   declarations: [
@@ -36,7 +33,6 @@ const appRoutes: Routes = [
     DogsComponent,
     AppsComponent,
     AboutMeComponent,
-    ThingsComponent,
     LandingComponent,
     CirclesComponent,
     TodoListComponent,
