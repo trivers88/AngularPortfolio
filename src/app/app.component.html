@@ -1,2 +1,30 @@
 <app-header></app-header>
-<router-outlet (activate)="onActivate($event)"></router-outlet>
+<div [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet
+    #outlet="outlet"
+    (activate)="onActivate($event)"
+  ></router-outlet>
+</div>
+
+<div id="preload">
+  <img src="/assets/birthday.jpg" width="1" height="1" />
+  <img src="/assets/circles.JPG" width="1" height="1" />
+  <img src="/assets/f2w.jpg" width="1" height="1" />
+  <img src="/assets/fam.jpg" width="1" height="1" />
+  <img src="/assets/glacier.jpg" width="1" height="1" />
+  <img src="/assets/guesser.JPG" width="1" height="1" />
+  <img src="/assets/iceland.jpb" width="1" height="1" />
+  <img src="/assets/lighthouse.jpg" width="1" height="1" />
+  <img src="/assets/majestic.jpg" width="1" height="1" />
+  <img src="/assets/parker.JPG" width="1" height="1" />
+  <img src="/assets/princeton.jpg" width="1" height="1" />
+  <img src="/assets/profesh.jfif" width="1" height="1" />
+  <img src="/assets/puppack.jpb" width="1" height="1" />
+  <img src="/assets/pups.jpg" width="1" height="1" />
+  <img src="/assets/ridin.jpg" width="1" height="1" />
+  <img src="/assets/sherman.jpg" width="1" height="1" />
+  <img src="/assets/smol.jpb" width="1" height="1" />
+  <img src="/assets/speedoflight.jpg" width="1" height="1" />
+  <img src="/assets/stars.jpg" width="1" height="1" />
+  <img src="/assets/todo.jpg" width="1" height="1" />
+</div>

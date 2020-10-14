@@ -1,7 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
 
 import { AppComponent } from "./app.component";
 import { AppHeaderComponent } from "./app-header/app-header.component";
@@ -13,23 +12,13 @@ import { LandingComponent } from "./landing/landing.component";
 import { CirclesComponent } from "./apps/circles/circles.component";
 import { TodoListComponent } from "./apps/todo-list/todo-list.component";
 import { ColorGuesserComponent } from "./apps/color-guesser/color-guesser.component";
-
-const appRoutes: Routes = [
-  { path: "", component: LandingComponent },
-  { path: "home", component: HomeComponent },
-  { path: "dogs", component: DogsComponent },
-  { path: "apps", component: AppsComponent },
-  { path: "circles", component: CirclesComponent },
-  { path: "todo", component: TodoListComponent },
-  { path: "colorguesser", component: ColorGuesserComponent },
-  { path: "aboutme", component: AboutMeComponent },
-];
+import { AppRoutingModule } from "./app-routing.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     AppHeaderComponent,
-    BrowserAnimationsModule,
+
     HomeComponent,
     DogsComponent,
     AppsComponent,
@@ -39,9 +28,8 @@ const appRoutes: Routes = [
     TodoListComponent,
     ColorGuesserComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
+  imports: [AppRoutingModule, BrowserModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [RouterModule],
 })
 export class AppModule {}
